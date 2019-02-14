@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-12 col-lg-8 ">
+            <div class="bg bg-light my-5 p-4">
+                <div class="text-heading text-center">Exchange a New Gram</div>
+                <form method="post" action="http://35.211.151.55/api/upload" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label for="select">Select Image:</label>
+                        <input type="file" class="form-control py-2" name="image" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="caption" class="d-block">Enter a Caption:</label>
+                        <input type="text" class="form-control py-2" name="caption" required>
+                        <input type="hidden" name="token" id="token" value="{{ $root.token }}">
+                        <input type="hidden" name="redirect" id="redirect" value="http://127.0.0.1:8080/#!/upload" />
+                    </div>
+                    <div class="form-group text-center mb-3">
+                        <button type="submit" class="btn btn-primary" >Upload</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+</div>

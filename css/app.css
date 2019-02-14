@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
+
+html,body {
+	min-height:100vh;
+	font-family: 'Roboto', sans-serif;
+}
+
+img {
+	max-width: 100%;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.row {
+	margin-left: 0px!important;
+	margin-right: 0px!important;
+}
+
+.button-logout, .button-login {
+	border: none;
+	padding: 0;
+	line-height: 40px;
+}
+
+.nav-links {
+	width: 45%;
+}
+.nav-item a {
+	font-weight: 300;
+	color: white;
+}
+
+.nav-item button{
+	font-weight: 300;
+}
+
+.navbar-toggler {
+	border-color: rgba(255,255,255,0.3)!important;
+	border-radius: 0.2rem!important;
+}
+
+.user {
+	white-space: nowrap;
+}
+
+.fa-bars {
+	color: rgba(255,255,255,0.5);
+	border-radius: 0.75
+}
+
+.user span {
+	font-weight: 300;
+}
+
+.avatar {
+	width: 2.5rem;
+	height: 2.5rem;
+}
+
+.nav-logo:hover {
+	border: none;
+	background: none!important;
+}
+
+.modal-header h5 {
+	color: black;
+}
+
+.modal-body label {
+	color: black;
+	margin-right: 10px;
+}
+
+.background-hero {
+	background-image: url("/images/hero_bg.jpeg");
+	height: 35rem;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.blue-overlay {
+	background-color: rgba(32,112,204, 0.25)!important;
+	height: 100%;
+}
+
+.text-heading {
+	font-size: 2.75rem;
+}
+
+.circle-number {
+	width: 5.5rem;
+	height: 5.5rem;
+	border-radius: 50%;
+	line-height: 90px;
+	font-size: 3.5rem;
+}
+
+.loadmore a {
+	font-weight: 400;
+}
+
+.caption_words {
+	height: auto!important;
+}
+
+.comment-form {
+	font-size: 0px;
+}
+
+.comment-avatar img {
+	height: 2.5rem;
+	max-width: 2.5rem;
+}
+
+.avatar-lg {
+	height: 8rem;
+	width: 100%;
+	max-width: 8rem;
+}
+
+.official-text {
+	text-align: left;
+	flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 1024px) {
+	.nav-item {
+		margin-left: 18px!important;
+	}
+
+	.welcome {
+		margin-right: 4px!important;
+	}
+
+	.avatar-lg {
+		height: 7rem;
+		width: 100%;
+		max-width: 7rem;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.header-logo {
+		width: 9.5rem;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.user {
+		display: none;
+	}
+
+	.avatar-lg {
+		height: 6rem;
+		width: 100%;
+		max-width: 6rem;
+	}
+
+}
+
+
+
+@media only screen and (max-width: 540px) {
+	.what-is .heading {
+		font-size: 2.3rem;
+	}
+
+	.prof-heading-item {
+		justify-content: center!important;
+		align-items: center!important;
+	}
+}
+
+@media only screen and (min-width: 540px) {
+	.edit-prof-container {
+		margin-left: auto;
+	}
+}
+
+@media only screen and (max-width: 540px) {
+	.official-text {
+		text-align: center;
+	}
+}

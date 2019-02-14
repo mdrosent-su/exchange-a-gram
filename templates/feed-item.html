@@ -1,0 +1,47 @@
+<section class="container my-5">
+    <div class="row">
+        <div class="col-12 col-md-6 col-lg-8 p-0">
+            <img class="w-100 h-100" ng-src="{{ 'http://35.211.151.55/' + data.image }}"  />
+        </div>
+        <div class="container border p-0 col-12 col-md-6 col-lg-4 d-flex flex-column">
+            <div class="bg bg-primary text-white p-2">
+                <img class="avatar" ng-src="{{ 'http://35.211.151.55/' + data.user.avatar}}"/>
+                <span class="username ml-2">{{ data.user.username }}</span>
+            </div>
+            <div class="likes bg bg-light p-2">
+                {{ data.likes }} likes
+            </div>
+            <div class="caption p-2">
+                <div class="caption_words">{{ data.caption }}</div>
+            </div>
+            <div class="like_post text-center p-1 mt-auto">
+                <a href="" class="text-primary">Like This Post</a>
+            </div>
+            <div class="edit_post text-center bg bg-light p-1">
+                <a href="" class="text-dark">Edit Post</a>
+            </div>
+        </div>
+    </div>
+    <div class="row my-4">
+        <div class="col-12 p-0">
+            <div class="mt-3">
+                <h2>Comments:</h2>
+                <p class="mb-0" ng-if="data.comments.length === 0">There are currently no comments.  Why not add one?</p>
+            </div>
+        </div>
+    </div>
+    <div class="comment-form row justify-content-center align-items-center">
+        <form class="w-100 d-flex justify-content-between align-items-center">
+            <div class="comment-avatar form-group ">
+                <img class="avatar" ng-src="{{ 'http://35.211.151.55' + $root.auth.avatar }}">
+             </div>
+            <div class="w-100 form-group px-2">
+                <input type="text" class="form-control" placeholder="Add new comment">
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-light">Comment</button>
+            </div>
+        </form>
+    </div>
+
+</section>

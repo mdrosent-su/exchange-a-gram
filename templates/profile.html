@@ -1,0 +1,24 @@
+<section class="py-5">
+    <div class="container text-center">
+        <div class="profile-info row border-bottom align-items-center pb-4">
+            <div class="prof-heading-item avatar-container col-12 col-md-3 col-lg-2 p-0 d-flex justify-content-start">
+                <img class="avatar avatar-lg" ng-src="{{ 'http://35.211.151.55/' + avatar}}"/>
+            </div>
+            <div class="prof-heading-item prof-username-container col-12 col-md-7 col-lg-9 p-0 pl-2 d-flex flex-column align-items-start">
+                <div class="text-heading username">{{ username }}</div>
+                <p class="official-text text-wrap pr-3">The official Exchange-A-Gram account of {{ username }}</p>
+            </div>
+            <div class="prof-heading-item edit-prof-container col-12 col-md-1 d-flex p-0 justify-content-end">
+                <button class="btn btn-light btn-sm">Edit Profile</button>
+            </div>
+        </div>
+    </div>
+        <div class="row">
+            <div class="col-12 col-sm-6 col-lg-4 mt-3" ng-repeat="post in profilePosts">
+                <a ui-sref="feedItem({ id:post.id })">
+                    <img class="border" ng-src="{{ 'http://35.211.151.55/' + post.image }}"  />
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
